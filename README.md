@@ -93,6 +93,31 @@ streamlit run Dashboard.py
 
 The dashboard will open at: `http://localhost:8501`
 
+## 📸 Screenshots
+
+### 1. Streamlit Dashboard - Manual Input
+<img width="1509" height="832" alt="Screenshot 2025-11-26 at 1 38 15 PM" src="https://github.com/user-attachments/assets/27b6406a-2858-4aec-963b-236b24a97eac" />
+
+*Interactive sliders for inputting house features*
+
+### 2. Prediction Results
+<img width="1512" height="783" alt="Screenshot 2025-11-26 at 1 24 53 PM" src="https://github.com/user-attachments/assets/ea48ae33-5e9b-49a3-9b14-60ac644c1236" />
+
+*Predicted price display with feature summary*
+
+### 3. FastAPI Documentation
+
+<img width="1512" height="760" alt="Screenshot 2025-11-26 at 1 31 48 PM" src="https://github.com/user-attachments/assets/d4ba3f05-aa68-4062-9f6d-82e04342cffc" />
+<img width="1510" height="805" alt="Screenshot 2025-11-26 at 1 30 41 PM" src="https://github.com/user-attachments/assets/1e8074c6-9b3e-4994-9b63-047653ab715b" />
+
+*Auto-generated interactive API documentation*
+
+### 4. Model Training Output
+<img width="855" height="536" alt="Screenshot 2025-11-26 at 1 35 27 PM" src="https://github.com/user-attachments/assets/d295c5df-62f8-48f7-8cf3-aef1193dc9d5" />
+
+*Model performance metrics and feature importance*
+
+
 ## 📊 Features
 
 ### Dataset Features (13 total):
