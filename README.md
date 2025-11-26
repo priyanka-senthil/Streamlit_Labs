@@ -2,10 +2,25 @@
 
 A complete machine learning application with FastAPI backend and Streamlit frontend for predicting house prices in the Boston area.
 
+## 🔄 How This Differs from the Iris Dataset Lab
+
+This lab builds upon the concepts from the Iris classification lab but introduces several key differences:
+
+### Dataset & Problem Type
+| Aspect | Iris Lab | Boston Housing Lab |
+|--------|----------|-------------------|
+| **Problem Type** | Classification (predict flower species) | Regression (predict house prices) |
+| **Target Variable** | Categorical (3 classes: setosa, versicolor, virginica) | Continuous (price in $1000s) |
+| **Number of Features** | 4 features (sepal/petal measurements) | 13 features (crime, rooms, tax, etc.) |
+| **Dataset Size** | 150 samples | 506 samples |
+| **Feature Types** | All numerical measurements | Mix of rates, indices, and measurements |
+
+---
+
 ## 📁 Project Structure
 
 ```
-boston_housing_lab/
+src/
 ├── train.py              # Model training script
 ├── main.py               # FastAPI backend server
 ├── Dashboard.py          # Streamlit frontend
@@ -145,18 +160,6 @@ The dashboard will open at: `http://localhost:8501`
    curl http://localhost:8000/health
    ```
 
-3. **POST /predict** - Make prediction
-   ```bash
-   curl -X POST http://localhost:8000/predict \
-     -H "Content-Type: application/json" \
-     -d @test.json
-   ```
-
-4. **GET /features** - Get feature information
-   ```bash
-   curl http://localhost:8000/features
-   ```
-
 ## 📈 Model Information
 
 - **Algorithm**: Random Forest Regressor
@@ -186,13 +189,6 @@ The dashboard will open at: `http://localhost:8501`
 ### Import Errors
 - Ensure virtual environment is activated
 - Reinstall requirements: `pip install -r requirements.txt`
-
-## 💡 Tips
-
-1. **Feature Importance**: After training, check which features matter most
-2. **Experiment**: Try different input values to see how they affect prices
-3. **Model Tuning**: Modify hyperparameters in `train.py` for better accuracy
-4. **API Testing**: Use the FastAPI docs at `/docs` for interactive testing
 
 ## 📝 Notes
 
@@ -228,3 +224,4 @@ Try these enhancements:
 - [scikit-learn Documentation](https://scikit-learn.org/)
 
 ---
+
